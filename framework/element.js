@@ -5,12 +5,5 @@ const createElement = tagName => (strings, ...args) => ({
     )
 });
 
-const div = createElement('div');
-const p = createElement('p');
-
-
-const firstName = 'James';
-const lastName = 'Anderson';
-
-const { template } = div`Hello ${firstName} ${lastName}!`;
-console.log(template);
+export const div = createElement('div');
+export const p = createElement('p');
